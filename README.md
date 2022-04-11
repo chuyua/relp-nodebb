@@ -1,5 +1,6 @@
 # relp-nodebb
 轻论坛
+
 curl -O https://download.redis.io/redis-stable.tar.gz
 
 tar -xzvf redis-stable.tar.gz
