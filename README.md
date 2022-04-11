@@ -11,6 +11,7 @@ make install
 git clone https://github.com/NodeBB/NodeBB.git && mv -b NodeBB/* ./ && mv -b NodeBB/.[^.]* ./ && rm -rf *~ && rm -rf NodeBB
 
 
-chmod +x *
+
+chmod +x ./*
 
 ./nodebb setup
