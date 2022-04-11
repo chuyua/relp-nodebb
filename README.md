@@ -8,7 +8,9 @@ tar -xzvf redis-stable.tar.gz
 mv -b redis-stable/* ./ && mv -b redis-stable/.[^.]* ./ && rm -rf *~ && rm -rf redis-stable
 
 make
+
 make install
+
 ls
 
 
