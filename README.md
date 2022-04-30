@@ -4,10 +4,4 @@
 
 安装指令nodebb
 
-git clone https://github.com/NodeBB/NodeBB
-
-chmod +x ./NodeBB
-
-mv -b NodeBB/* ./ && mv -b NodeBB/.[^.]* ./ && rm -rf *~ && rm -rf NodeBB
-
-./nodebb setup
+git clone https://github.com/chuyua/relp-nodebb && mv -b relp-nodebb/* ./ && mv -b relp-nodebb/.[^.]* ./ && rm -rf *~ && rm -rf relp-nodebb
