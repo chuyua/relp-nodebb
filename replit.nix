@@ -1,7 +1,7 @@
 { pkgs }: {
 	deps = with pkgs; [
-		pkgs.nodejs-16_x
+		nodejs-14_x
 		pkgs.bashInteractive
-		pkgs.redis
+    pkgs.redis
 	];
 }
