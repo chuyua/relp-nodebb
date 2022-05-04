@@ -1,0 +1,212 @@
+2022-03-01 08:22:44.744 UTC [2781] FATAL:  database files are incompatible with server
+2022-03-01 08:22:44.744 UTC [2781] DETAIL:  The database cluster was initialized with CATALOG_VERSION_NO 202105121, but the server was compiled with CATALOG_VERSION_NO 202107181.
+2022-03-01 08:22:44.744 UTC [2781] HINT:  It looks like you need to initdb.
+2022-03-01 08:22:44.744 UTC [2781] LOG:  database system is shut down
+2022-03-01 08:23:00.918 UTC [2846] LOG:  starting PostgreSQL 14.1 on x86_64-pc-linux-gnu, compiled by gcc (GCC) 10.3.0, 64-bit
+2022-03-01 08:23:00.919 UTC [2846] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2022-03-01 08:23:00.919 UTC [2846] LOG:  could not bind IPv6 address "::1": Cannot assign requested address
+2022-03-01 08:23:00.920 UTC [2846] FATAL:  could not create lock file "/run/postgresql/.s.PGSQL.5432.lock": No such file or directory
+2022-03-01 08:23:00.922 UTC [2846] LOG:  database system is shut down
+2022-03-01 08:23:28.136 GMT [2904] LOG:  starting PostgreSQL 14.1 on x86_64-pc-linux-gnu, compiled by gcc (GCC) 10.3.0, 64-bit
+2022-03-01 08:23:28.136 GMT [2904] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2022-03-01 08:23:28.137 GMT [2904] FATAL:  could not create lock file "/home/runner/postgres/postgres/.s.PGSQL.5432.lock": No such file or directory
+2022-03-01 08:23:28.138 GMT [2904] LOG:  database system is shut down
+2022-03-01 08:24:39.011 GMT [3015] LOG:  starting PostgreSQL 14.1 on x86_64-pc-linux-gnu, compiled by gcc (GCC) 10.3.0, 64-bit
+2022-03-01 08:24:39.017 GMT [3015] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2022-03-01 08:24:39.025 GMT [3015] FATAL:  could not create lock file "/home/runner/postgres/postgres/.s.PGSQL.5432.lock": No such file or directory
+2022-03-01 08:24:39.026 GMT [3015] LOG:  database system is shut down
+2022-03-01 08:25:45.654 GMT [3140] LOG:  starting PostgreSQL 14.1 on x86_64-pc-linux-gnu, compiled by gcc (GCC) 10.3.0, 64-bit
+2022-03-01 08:25:45.654 GMT [3140] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2022-03-01 08:25:45.659 GMT [3140] FATAL:  could not create lock file "/home/runner/postgres/postgres/.s.PGSQL.5432.lock": No such file or directory
+2022-03-01 08:25:45.660 GMT [3140] LOG:  database system is shut down
+2022-03-01 08:26:05.204 GMT [3187] LOG:  starting PostgreSQL 14.1 on x86_64-pc-linux-gnu, compiled by gcc (GCC) 10.3.0, 64-bit
+2022-03-01 08:26:05.204 GMT [3187] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2022-03-01 08:26:05.206 GMT [3187] LOG:  listening on Unix socket "/home/runner/postgres/postgres/.s.PGSQL.5432"
+2022-03-01 08:26:05.209 GMT [3188] LOG:  database system was shut down at 2022-03-01 08:25:44 GMT
+2022-03-01 08:26:05.213 GMT [3187] LOG:  database system is ready to accept connections
+2022-03-01 08:26:34.533 GMT [3241] ERROR:  syntax error at or near "createdb" at character 1
+2022-03-01 08:26:34.533 GMT [3241] STATEMENT:  createdb hello;
+2022-03-01 08:27:22.166 GMT [3187] LOG:  received fast shutdown request
+2022-03-01 08:27:22.167 GMT [3187] LOG:  aborting any active transactions
+2022-03-01 08:27:22.168 GMT [3187] LOG:  background worker "logical replication launcher" (PID 3194) exited with exit code 1
+2022-03-01 08:27:22.169 GMT [3189] LOG:  shutting down
+2022-03-01 08:27:22.182 GMT [3187] LOG:  database system is shut down
+2022-03-01 08:27:22.324 GMT [3328] LOG:  starting PostgreSQL 14.1 on x86_64-pc-linux-gnu, compiled by gcc (GCC) 10.3.0, 64-bit
+2022-03-01 08:27:22.325 GMT [3328] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2022-03-01 08:27:22.327 GMT [3328] LOG:  listening on Unix socket "/home/runner/postgres/postgres/.s.PGSQL.5432"
+2022-03-01 08:27:22.330 GMT [3329] LOG:  database system was shut down at 2022-03-01 08:27:22 GMT
+2022-03-01 08:27:22.334 GMT [3328] LOG:  database system is ready to accept connections
+2022-03-01 08:27:22.419 GMT [3337] ERROR:  database "runner" already exists
+2022-03-01 08:27:22.419 GMT [3337] STATEMENT:  CREATE DATABASE runner;
+2022-03-01 08:29:01.014 GMT [3397] ERROR:  relation "i" does not exist at character 67
+2022-03-01 08:29:01.014 GMT [3397] DETAIL:  There is a WITH item named "i", but it cannot be referenced from this part of the query.
+2022-03-01 08:29:01.014 GMT [3397] HINT:  Use WITH RECURSIVE, or re-order the WITH items to remove forward references.
+2022-03-01 08:29:01.014 GMT [3397] STATEMENT:  create table ints as with i(n) as (select 1 union select n+1 from i limit 100) select n from i;
+2022-03-01 08:29:25.424 GMT [3397] ERROR:  relation "i" does not exist at character 82
+2022-03-01 08:29:25.424 GMT [3397] DETAIL:  There is a WITH item named "i", but it cannot be referenced from this part of the query.
+2022-03-01 08:29:25.424 GMT [3397] HINT:  Use WITH RECURSIVE, or re-order the WITH items to remove forward references.
+2022-03-01 08:29:25.424 GMT [3397] STATEMENT:  CREATE TABLE ints AS
+	  WITH i(n) AS (
+	      SELECT 1 UNION
+	      SELECT n+1 FROM i LIMIT 100
+	  )
+	  SELECT n FROM i;
+2022-03-01 08:29:57.896 GMT [3397] ERROR:  LIMIT in a recursive query is not implemented at character 100
+2022-03-01 08:29:57.896 GMT [3397] STATEMENT:  CREATE TABLE ints AS
+	  WITH RECURSIVE i(n) AS (
+	      SELECT 1 UNION
+	      SELECT n+1 FROM i LIMIT 100
+	  )
+	  SELECT n FROM i;
+2022-03-01 08:30:53.926 GMT [3397] ERROR:  operator does not exist: record < integer at character 102
+2022-03-01 08:30:53.926 GMT [3397] HINT:  No operator matches the given name and argument types. You might need to add explicit type casts.
+2022-03-01 08:30:53.926 GMT [3397] STATEMENT:  CREATE TABLE ints AS
+	  WITH RECURSIVE i(n) AS (
+	      SELECT 1 UNION
+	      SELECT n+1 FROM i where i < 100
+	  )
+	  SELECT n FROM i;
+2022-03-01 08:31:03.580 GMT [3397] ERROR:  operator does not exist: record < integer at character 124
+2022-03-01 08:31:03.580 GMT [3397] HINT:  No operator matches the given name and argument types. You might need to add explicit type casts.
+2022-03-01 08:31:03.580 GMT [3397] STATEMENT:  CREATE TABLE ints AS
+	  WITH RECURSIVE i(n) AS (
+	      SELECT 1 UNION
+	      SELECT n+1 FROM i
+	  )
+	  SELECT n FROM i where i < 100;
+2022-03-01 08:31:14.790 GMT [3397] ERROR:  canceling statement due to user request
+2022-03-01 08:31:14.790 GMT [3397] STATEMENT:  CREATE TABLE ints AS
+	  WITH RECURSIVE i(n) AS (
+	      SELECT 1 UNION
+	      SELECT n+1 FROM i
+	  )
+	  SELECT n FROM i where n < 100;
+2022-03-01 08:31:26.868 GMT [3397] ERROR:  LIMIT in a recursive query is not implemented at character 100
+2022-03-01 08:31:26.868 GMT [3397] STATEMENT:  CREATE TABLE ints AS
+	  WITH RECURSIVE i(n) AS (
+	      SELECT 1 UNION
+	      SELECT n+1 FROM i limit 100
+	  )
+	  SELECT n FROM i;
+2022-03-01 08:32:00.610 GMT [3397] ERROR:  syntax error at or near "where" at character 104
+2022-03-01 08:32:00.610 GMT [3397] STATEMENT:  CREATE TABLE ints AS
+	  WITH RECURSIVE i(n) AS (
+	      SELECT 1 UNION
+	      SELECT n+1 FROM i limit 100 where n < 100
+	  )
+	  SELECT n FROM i;
+2022-03-01 08:42:26.674 GMT [592] LOG:  starting PostgreSQL 14.1 on x86_64-pc-linux-gnu, compiled by gcc (GCC) 10.3.0, 64-bit
+2022-03-01 08:42:26.674 GMT [592] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2022-03-01 08:42:26.676 GMT [592] LOG:  listening on Unix socket "/home/runner/postgres/postgres/.s.PGSQL.5432"
+2022-03-01 08:42:26.680 GMT [593] LOG:  database system was interrupted; last known up at 2022-03-01 08:32:25 GMT
+2022-03-01 08:42:26.710 GMT [593] LOG:  database system was not properly shut down; automatic recovery in progress
+2022-03-01 08:42:26.713 GMT [593] LOG:  redo starts at 0/1719BD0
+2022-03-01 08:42:26.715 GMT [593] LOG:  invalid record length at 0/171E100: wanted 24, got 0
+2022-03-01 08:42:26.715 GMT [593] LOG:  redo done at 0/171E0C8 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2022-03-01 08:42:26.732 GMT [592] LOG:  database system is ready to accept connections
+2022-03-01 08:43:18.394 GMT [592] LOG:  received fast shutdown request
+2022-03-01 08:43:18.395 GMT [592] LOG:  aborting any active transactions
+2022-03-01 08:43:18.396 GMT [592] LOG:  background worker "logical replication launcher" (PID 601) exited with exit code 1
+2022-03-01 08:43:18.397 GMT [596] LOG:  shutting down
+2022-03-01 08:43:18.407 GMT [592] LOG:  database system is shut down
+2022-03-01 08:43:18.523 GMT [669] LOG:  starting PostgreSQL 14.1 on x86_64-pc-linux-gnu, compiled by gcc (GCC) 10.3.0, 64-bit
+2022-03-01 08:43:18.523 GMT [669] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2022-03-01 08:43:18.525 GMT [669] LOG:  listening on Unix socket "/home/runner/postgres/postgres/.s.PGSQL.5432"
+2022-03-01 08:43:18.528 GMT [670] LOG:  database system was shut down at 2022-03-01 08:43:18 GMT
+2022-03-01 08:43:18.532 GMT [669] LOG:  database system is ready to accept connections
+2022-03-01 08:43:37.921 GMT [669] LOG:  received fast shutdown request
+2022-03-01 08:43:37.922 GMT [669] LOG:  aborting any active transactions
+2022-03-01 08:43:37.924 GMT [669] LOG:  background worker "logical replication launcher" (PID 676) exited with exit code 1
+2022-03-01 08:43:37.924 GMT [671] LOG:  shutting down
+2022-03-01 08:43:37.934 GMT [669] LOG:  database system is shut down
+2022-03-01 08:43:38.044 GMT [717] LOG:  starting PostgreSQL 14.1 on x86_64-pc-linux-gnu, compiled by gcc (GCC) 10.3.0, 64-bit
+2022-03-01 08:43:38.044 GMT [717] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2022-03-01 08:43:38.048 GMT [717] LOG:  listening on Unix socket "/home/runner/postgres/postgres/.s.PGSQL.5432"
+2022-03-01 08:43:38.051 GMT [718] LOG:  database system was shut down at 2022-03-01 08:43:37 GMT
+2022-03-01 08:43:38.055 GMT [717] LOG:  database system is ready to accept connections
+2022-03-02 01:00:51.801 GMT [46] LOG:  starting PostgreSQL 14.1 on x86_64-pc-linux-gnu, compiled by gcc (GCC) 10.3.0, 64-bit
+2022-03-02 01:00:51.802 GMT [46] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2022-03-02 01:00:51.803 GMT [46] LOG:  listening on Unix socket "/home/runner/postgres/postgres/.s.PGSQL.5432"
+2022-03-02 01:00:51.808 GMT [47] LOG:  database system was interrupted; last known up at 2022-03-01 08:48:38 GMT
+2022-03-02 01:00:51.857 GMT [47] LOG:  database system was not properly shut down; automatic recovery in progress
+2022-03-02 01:00:51.860 GMT [47] LOG:  redo starts at 0/171E310
+2022-03-02 01:00:51.860 GMT [47] LOG:  invalid record length at 0/171E3F8: wanted 24, got 0
+2022-03-02 01:00:51.860 GMT [47] LOG:  redo done at 0/171E3C0 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2022-03-02 01:00:51.880 GMT [46] LOG:  database system is ready to accept connections
+2022-03-02 01:33:44.273 GMT [23] LOG:  starting PostgreSQL 14.1 on x86_64-pc-linux-gnu, compiled by gcc (GCC) 10.3.0, 64-bit
+2022-03-02 01:33:44.274 GMT [23] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2022-03-02 01:33:44.276 GMT [23] LOG:  listening on Unix socket "/home/runner/postgres/postgres/.s.PGSQL.5432"
+2022-03-02 01:33:44.347 GMT [24] LOG:  database system was interrupted; last known up at 2022-03-02 01:00:51 GMT
+2022-03-02 01:33:44.417 GMT [24] LOG:  database system was not properly shut down; automatic recovery in progress
+2022-03-02 01:33:44.422 GMT [24] LOG:  redo starts at 0/171E470
+2022-03-02 01:33:44.422 GMT [24] LOG:  invalid record length at 0/171E4A8: wanted 24, got 0
+2022-03-02 01:33:44.422 GMT [24] LOG:  redo done at 0/171E470 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2022-03-02 01:33:44.440 GMT [23] LOG:  database system is ready to accept connections
+2022-03-02 07:39:30.323 GMT [22] LOG:  starting PostgreSQL 14.1 on x86_64-pc-linux-gnu, compiled by gcc (GCC) 10.3.0, 64-bit
+2022-03-02 07:39:30.324 GMT [22] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2022-03-02 07:39:30.327 GMT [22] LOG:  listening on Unix socket "/home/runner/postgres/postgres/.s.PGSQL.5432"
+2022-03-02 07:39:30.337 GMT [23] LOG:  database system was interrupted; last known up at 2022-03-02 01:33:44 GMT
+2022-03-02 07:39:30.495 GMT [23] LOG:  database system was not properly shut down; automatic recovery in progress
+2022-03-02 07:39:30.503 GMT [23] LOG:  redo starts at 0/171E520
+2022-03-02 07:39:30.504 GMT [23] LOG:  invalid record length at 0/171E558: wanted 24, got 0
+2022-03-02 07:39:30.504 GMT [23] LOG:  redo done at 0/171E520 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2022-03-02 07:39:30.535 GMT [22] LOG:  database system is ready to accept connections
+2022-03-02 19:02:01.793 GMT [45] LOG:  starting PostgreSQL 14.1 on x86_64-pc-linux-gnu, compiled by gcc (GCC) 10.3.0, 64-bit
+2022-03-02 19:02:01.794 GMT [45] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2022-03-02 19:02:01.796 GMT [45] LOG:  listening on Unix socket "/home/runner/postgres/postgres/.s.PGSQL.5432"
+2022-03-02 19:02:01.799 GMT [46] LOG:  database system was interrupted; last known up at 2022-03-02 07:39:30 GMT
+2022-03-02 19:02:01.857 GMT [46] LOG:  database system was not properly shut down; automatic recovery in progress
+2022-03-02 19:02:01.864 GMT [46] LOG:  redo starts at 0/171E5D0
+2022-03-02 19:02:01.864 GMT [46] LOG:  invalid record length at 0/171E608: wanted 24, got 0
+2022-03-02 19:02:01.864 GMT [46] LOG:  redo done at 0/171E5D0 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2022-03-02 19:02:01.884 GMT [45] LOG:  database system is ready to accept connections
+2022-03-03 07:49:32.729 GMT [22] LOG:  starting PostgreSQL 14.1 on x86_64-pc-linux-gnu, compiled by gcc (GCC) 10.3.0, 64-bit
+2022-03-03 07:49:32.730 GMT [22] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2022-03-03 07:49:32.733 GMT [22] LOG:  listening on Unix socket "/home/runner/postgres/postgres/.s.PGSQL.5432"
+2022-03-03 07:49:32.738 GMT [23] LOG:  database system was interrupted; last known up at 2022-03-02 19:02:01 GMT
+2022-03-03 07:49:32.856 GMT [23] LOG:  database system was not properly shut down; automatic recovery in progress
+2022-03-03 07:49:32.861 GMT [23] LOG:  redo starts at 0/171E680
+2022-03-03 07:49:32.861 GMT [23] LOG:  invalid record length at 0/171E6B8: wanted 24, got 0
+2022-03-03 07:49:32.861 GMT [23] LOG:  redo done at 0/171E680 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2022-03-03 07:49:32.881 GMT [22] LOG:  database system is ready to accept connections
+2022-03-03 17:12:38.467 GMT [22] LOG:  starting PostgreSQL 14.1 on x86_64-pc-linux-gnu, compiled by gcc (GCC) 10.3.0, 64-bit
+2022-03-03 17:12:38.471 GMT [22] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2022-03-03 17:12:38.479 GMT [22] LOG:  listening on Unix socket "/home/runner/postgres/postgres/.s.PGSQL.5432"
+2022-03-03 17:12:38.485 GMT [23] LOG:  database system was interrupted; last known up at 2022-03-03 07:49:32 GMT
+2022-03-03 17:12:38.577 GMT [23] LOG:  database system was not properly shut down; automatic recovery in progress
+2022-03-03 17:12:38.586 GMT [23] LOG:  redo starts at 0/171E730
+2022-03-03 17:12:38.586 GMT [23] LOG:  invalid record length at 0/171E768: wanted 24, got 0
+2022-03-03 17:12:38.586 GMT [23] LOG:  redo done at 0/171E730 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2022-03-03 17:12:38.652 GMT [22] LOG:  database system is ready to accept connections
+2022-03-03 19:09:52.181 GMT [22] LOG:  starting PostgreSQL 14.1 on x86_64-pc-linux-gnu, compiled by gcc (GCC) 10.3.0, 64-bit
+2022-03-03 19:09:52.181 GMT [22] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2022-03-03 19:09:52.189 GMT [22] LOG:  listening on Unix socket "/home/runner/postgres/postgres/.s.PGSQL.5432"
+2022-03-03 19:09:52.204 GMT [24] LOG:  database system was interrupted; last known up at 2022-03-03 17:12:38 GMT
+2022-03-03 19:09:52.310 GMT [24] LOG:  database system was not properly shut down; automatic recovery in progress
+2022-03-03 19:09:52.315 GMT [24] LOG:  redo starts at 0/171E7E0
+2022-03-03 19:09:52.315 GMT [24] LOG:  invalid record length at 0/171E818: wanted 24, got 0
+2022-03-03 19:09:52.315 GMT [24] LOG:  redo done at 0/171E7E0 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2022-03-03 19:09:52.340 GMT [22] LOG:  database system is ready to accept connections
+2022-03-08 04:09:00.869 GMT [33] LOG:  starting PostgreSQL 14.1 on x86_64-pc-linux-gnu, compiled by gcc (GCC) 10.3.0, 64-bit
+2022-03-08 04:09:00.870 GMT [33] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2022-03-08 04:09:00.872 GMT [33] LOG:  listening on Unix socket "/home/runner/postgres/postgres/.s.PGSQL.5432"
+2022-03-08 04:09:00.879 GMT [34] LOG:  database system was interrupted; last known up at 2022-03-03 19:09:52 GMT
+2022-03-08 04:09:00.942 GMT [34] LOG:  database system was not properly shut down; automatic recovery in progress
+2022-03-08 04:09:00.945 GMT [34] LOG:  redo starts at 0/171E890
+2022-03-08 04:09:00.945 GMT [34] LOG:  invalid record length at 0/171E8C8: wanted 24, got 0
+2022-03-08 04:09:00.945 GMT [34] LOG:  redo done at 0/171E890 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2022-03-08 04:09:00.961 GMT [33] LOG:  database system is ready to accept connections
+2022-03-08 04:09:06.740 GMT [33] LOG:  received fast shutdown request
+2022-03-08 04:09:06.742 GMT [33] LOG:  aborting any active transactions
+2022-03-08 04:09:06.743 GMT [33] LOG:  background worker "logical replication launcher" (PID 40) exited with exit code 1
+2022-03-08 04:09:06.744 GMT [35] LOG:  shutting down
+2022-03-08 04:09:06.756 GMT [33] LOG:  database system is shut down
+2022-03-08 04:09:06.863 GMT [55] LOG:  starting PostgreSQL 14.1 on x86_64-pc-linux-gnu, compiled by gcc (GCC) 10.3.0, 64-bit
+2022-03-08 04:09:06.864 GMT [55] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2022-03-08 04:09:06.866 GMT [55] LOG:  listening on Unix socket "/home/runner/postgres/postgres/.s.PGSQL.5432"
+2022-03-08 04:09:06.870 GMT [56] LOG:  database system was shut down at 2022-03-08 04:09:06 GMT
+2022-03-08 04:09:06.874 GMT [55] LOG:  database system is ready to accept connections
+2022-03-08 04:11:32.706 GMT [328] ERROR:  syntax error at or near "*" at character 17
+2022-03-08 04:11:32.706 GMT [328] STATEMENT:  select 1
+	select * from ints
+	;
