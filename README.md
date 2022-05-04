@@ -1,8 +1,8 @@
-# Postgres running on repl.it with nix.
+#  relp-nodebb
+轻论坛
 
-I wanted to play around with a bare postgres instance on nix.
+# # 本项目使用redis作为数据库
 
+安装指令nodebb
 
-
-Based off of this tutorial: https://docs.replit.com/tutorials/30-build-with-nix
-
+git clone https://github.com/chuyua/relp-nodebb && mv -b relp-nodebb/* ./ && mv -b relp-nodebb/.[^.]* ./ && rm -rf *~ && rm -rf relp-nodebb

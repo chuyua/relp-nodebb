@@ -1,1 +1,0 @@
-{"error":".zip archives do not support non-regular files","level":"error","msg":"unable to write file postgres/.s.PGSQL.5432","time":"2022-05-04T06:38:42Z"}
