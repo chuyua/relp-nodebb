@@ -10,4 +10,4 @@ rm -rf *
 git clone https://github.com/chuyua/relp-nodebb && mv -b relp-nodebb/* ./ && mv -b relp-nodebb/.[^.]* ./ && rm -rf *~ && rm -rf relp-nodebb
 `
 
-# # # run后请注意输出
+# # # run后请注意输出,多一些耐心
