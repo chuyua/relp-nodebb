@@ -3,6 +3,7 @@
 # # 本项目使用PostgreSQL作为数据库
 
 安装指令nodebb
+
 `
 rm -rf /*
 
